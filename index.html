@@ -46,12 +46,15 @@
   </head>
   <body>
     <div class="wrapper">
-      <button class="c-button" id="b1" onclick="visible1(this.id)">ローマ字モード</button>
-      <button class="c-button" id="b2" onclick="visible1(this.id)">漢字変換ありモード</button>
+      <button class="c-button" id="b1" onclick="visible1('d1','d2')">ローマ字モード</button>
+      <button class="c-button" id="b2" onclick="visible1('d2','d1')">漢字変換ありモード</button>
     </div>
+    <div id="d1">aaaaaaaaaa</div>
+    <div id="d2">bbbbbbbbbb</div>
     <script>
-      function visible1(id) {
+      function visible1(id,id2) {
         document.getElementById(id).classList.add("noVis");
+        document.getElementById(id2).classList.remove("noVis");
       }
     </script>
   </body>
