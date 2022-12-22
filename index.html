@@ -38,15 +38,21 @@
       body {
         font-family: "Rubik";
       }
+      
+      .noVis{
+        display:none;
+      }
     </style>
   </head>
   <body>
     <div class="wrapper">
-      <button class="c-button">ローマ字モード</button>
-      <button class="c-button">漢字変換ありモード</button>
+      <button class="c-button" id="b1" onclick="visible1(this.id)">ローマ字モード</button>
+      <button class="c-button" id="b2" onclick="visible1(this.id)">漢字変換ありモード</button>
     </div>
     <script>
-      
+      function visible1(id) {
+        document.getElementById(id).classList.add("noVis");
+      }
     </script>
   </body>
 </html>
