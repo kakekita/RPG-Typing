@@ -1,9 +1,50 @@
 <!doctype html>
 <html>
   <head>
-    
+    <title>RPGタイピングゲーム</title>
+    <style>
+      .c-button {
+        appearance: none;
+        font-family: inherit;
+        display: inline-block;
+        min-width: 100px;
+        border: 0;
+        border-radius: 5px;
+        background: #4676d7;
+        color: #fff;
+        padding: 10px 16px;
+        font-size: 1rem;
+        text-decoration: none;
+        cursor: pointer;
+        transition: 0.3s ease-out;
+
+        &:hover {
+          background: #1d49aa;
+        }
+
+        &:focus {
+          outline: none;
+          box-shadow: 0 0 0 4px #cbd6ee;
+        }
+      }
+
+      /********** Basic Styles **********/
+      .wrapper {
+        max-width: 500px;
+        padding: 1rem;
+        margin: 0 auto;
+      }
+
+      body {
+        font-family: "Rubik";
+      }
+    </style>
   </head>
   <body>
+    <div class="wrapper">
+      <button class="c-button">ローマ字モード</button>
+      <button class="c-button">漢字変換ありモード</button>
+    </div>
     <script>
       
     </script>
